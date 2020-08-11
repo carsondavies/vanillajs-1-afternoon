@@ -56,7 +56,7 @@ const play = (clickedId) => {
         alert(`${bottomLeft} is the winner!`)
         return;
     }
-    const boardFull = true
+    let boardFull = true
     for(i = 0; i <= 8; i++) {
         if(board[i] === undefined){
             boardFull = false
@@ -65,6 +65,26 @@ const play = (clickedId) => {
     if(boardFull === true) {
     alert(`CATS GAME`)
     }
+
 }
 
-   
+const resetGame = () => {
+let resGame = document.getElementsByTagName('td')  
+resGame[0].innerText = ''
+resGame[1].innerText = ''
+resGame[2].innerText = ''
+resGame[3].innerText = ''
+resGame[4].innerText = ''
+resGame[5].innerText = ''
+resGame[6].innerText = ''
+resGame[7].innerText = ''
+resGame[8].innerText = ''
+
+    // let nodeList = document.getElementsByTagName('td')
+// console.log(nodeList)
+//     for(let j=0; j < nodeList.length; j++) {
+//         // (nodeList[j] === 'X' || nodeList[j] === 'O') 
+//        nodeList[j] = ''
+//     }
+//     console.log('gameReset')
+}

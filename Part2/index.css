@@ -53,3 +53,13 @@ section span:nth-of-type(3) {
   width: 100px;
   border: 1px solid #000;
 }
+
+.reset {
+  display: inline-block;
+}
+
+#new-hand {
+  background-color: lightblue;
+  margin-top: 10px;
+  margin-left: 2px;
+}
